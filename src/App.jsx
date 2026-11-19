@@ -16,6 +16,10 @@ const TITLES = {
   up: "Upload scorecards",
 };
 
+// a match must have innings with bat/bowl lists, otherwise ignore it
+const valid = (m) =>
+  m && Array.isArray(m.innings) && m.innings.every((i) => i && Array.isArray(i.bat) && Array.isArray(i.bowl));
+
 const load = (key, fallback) => {
   try { return JSON.parse(localStorage.getItem(key)) ?? fallback; } catch { return fallback; }
 };
@@ -26,8 +30,8 @@ const save = (key, value) => {
 export default function App() {
   const [tab, setTab] = useState("lead");
   const [repo, setRepo] = useState([]);                 // public/matches.json
-  const [local, setLocal] = useState(() => load("tt_local", [])); // uploaded on this device
-  const [team, setTeam] = useState(() => load("tt_team", ""));
+  const [local, setLocal] = useState(() => load("cat_local", []).filter(valid)); // uploaded on this device
+  const [team, setTeam] = useState(() => load("cat_team", ""));
   const [cur, setCur] = useState(null);                  // selected player
   const [picked, setPicked] = useState(null);            // manual squad choice (null = auto top 15)
   const [msg, setMsg] = useState("");
@@ -36,7 +40,7 @@ export default function App() {
   useEffect(() => {
     fetch(`${import.meta.env.BASE_URL}matches.json`, { cache: "no-store" })
       .then((r) => (r.ok ? r.json() : []))
-      .then((j) => Array.isArray(j) && setRepo(j))
+      .then((j) => Array.isArray(j) && setRepo(j.filter(valid)))
       .catch(() => {});
   }, []);
 
@@ -66,7 +70,7 @@ export default function App() {
     timer.current = setTimeout(() => setMsg(""), 3800);
   };
 
-  const onTeam = (v) => { setTeam(v); save("tt_team", v); setPicked(null); setCur(null); };
+  const onTeam = (v) => { setTeam(v); save("cat_team", v); setPicked(null); setCur(null); };
   const onPick = (name) => { setCur(name); setTab("pl"); window.scrollTo(0, 0); };
   const onToggle = (name) => {
     const next = new Set(squad);
@@ -81,13 +85,13 @@ export default function App() {
     allRef.current = [...allRef.current, m];
     setLocal((prev) => {
       const next = [...prev, m];
-      save("tt_local", next);
+      save("cat_local", next);
       return next;
     });
     return "ok";
   };
   const onDelete = (id) => {
-    setLocal((prev) => { const next = prev.filter((m) => m.id !== id); save("tt_local", next); return next; });
+    setLocal((prev) => { const next = prev.filter((m) => m.id !== id); save("cat_local", next); return next; });
     setRepo((prev) => prev.filter((m) => m.id !== id));
   };
 

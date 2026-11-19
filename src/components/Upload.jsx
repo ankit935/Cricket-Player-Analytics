@@ -12,7 +12,7 @@ async function sha256(text) {
 
 export default function Upload({ matches, onAdd, onDelete, toast }) {
   const [ok, setOk] = useState(() => {
-    try { return sessionStorage.getItem("tt_ok") === "1"; } catch { return false; }
+    try { return sessionStorage.getItem("cat_ok") === "1"; } catch { return false; }
   });
   const [pw, setPw] = useState("");
   const [err, setErr] = useState("");
@@ -20,7 +20,7 @@ export default function Upload({ matches, onAdd, onDelete, toast }) {
 
   async function unlock() {
     if ((await sha256(pw)) === HASH) {
-      try { sessionStorage.setItem("tt_ok", "1"); } catch { /* ignore */ }
+      try { sessionStorage.setItem("cat_ok", "1"); } catch { /* ignore */ }
       setOk(true);
     } else {
       setErr("Wrong password");
@@ -29,7 +29,7 @@ export default function Upload({ matches, onAdd, onDelete, toast }) {
   }
 
   function lock() {
-    try { sessionStorage.removeItem("tt_ok"); } catch { /* ignore */ }
+    try { sessionStorage.removeItem("cat_ok"); } catch { /* ignore */ }
     setOk(false);
     setPw("");
     setErr("");
