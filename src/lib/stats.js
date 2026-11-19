@@ -1,6 +1,6 @@
 // ---------- Team filter ----------
 // "My team" = Titans A, Titans B, Tatva Titans (and spelling variants).
-export const MY_TEAM_LABEL = "My team (Titans A, B & Tatva Titans)";
+export const MY_TEAM_LABEL = "My Team";
 export const MY_RE = /^(tatva\s+)?titans(\s*[-–]?\s*[ab])?$/i;
 
 // sel: "" = my team, "*" = everyone, otherwise an exact team name
