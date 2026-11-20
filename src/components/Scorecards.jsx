@@ -32,6 +32,7 @@ function buildMatrix(matches, inc) {
 export default function Scorecards({ matches, players, team }) {
   const [q, setQ] = useState("");
   const [view, setView] = useState("side");
+  const [bview, setBview] = useState("order");
 
   if (!matches.length)
     return (
@@ -47,6 +48,11 @@ export default function Scorecards({ matches, players, team }) {
   const key = q.trim().toLowerCase();
   const hit = (n) => (key && n.toLowerCase().includes(key) ? "hl" : "");
   const cols = matches.map((_, i) => i);
+
+  // original scoreboard order: one column per innings of my team
+  const icols = [];
+  matches.forEach((m, mi) => m.innings.forEach((inn) => { if (inc(inn.team)) icols.push({ m, mi, inn }); }));
+  const maxPos = Math.max(0, ...icols.map((c) => c.inn.bat.length));
 
   const sum = (row, f) => cols.reduce((a, i) => a + (row[i] ? f(row[i]) : 0), 0);
   const count = (row) => cols.filter((i) => row[i]).length;
@@ -121,6 +127,42 @@ export default function Scorecards({ matches, players, team }) {
     );
   };
 
+  const orderTable = (
+    <table className="tbl mx">
+      <thead>
+        <tr>
+          <th className="nm">Batting order</th>
+          {icols.map((c, i) => (
+            <th key={i} title={c.m.title}>M{c.mi + 1} · {c.inn.team}<small>{c.m.date || ""}</small></th>
+          ))}
+        </tr>
+      </thead>
+      <tbody>
+        {Array.from({ length: maxPos }, (_, pos) => (
+          <tr key={pos}>
+            <td className="nm">{pos < 4 ? <span className="tag b">No. {pos + 1}</span> : "No. " + (pos + 1)}</td>
+            {icols.map((c, i) => {
+              const x = c.inn.bat[pos];
+              if (!x) return <td key={i} className="na">–</td>;
+              const retired = /retired/i.test(x[6] || "");
+              const mark = !x[5] && !retired ? "*" : retired ? " RH" : "";
+              return (
+                <td key={i} className={[pos < 4 ? "t4" : "", hit(x[0])].join(" ").trim()} title={x[6] || ""}>
+                  <b>{x[0]}</b>
+                  <small>{x[1]}{mark} ({x[2]})</small>
+                </td>
+              );
+            })}
+          </tr>
+        ))}
+        <tr className="tf">
+          <td className="nm">Total</td>
+          {icols.map((c, i) => <td key={i}>{c.inn.score}</td>)}
+        </tr>
+      </tbody>
+    </table>
+  );
+
   const legend = (
     <div style={{ fontSize: 12, color: "var(--mu)", display: "flex", gap: "4px 16px", flexWrap: "wrap" }}>
       {matches.map((m, i) => (
@@ -140,8 +182,15 @@ export default function Scorecards({ matches, players, team }) {
       {view === "side" ? (
         <>
           <div className="c" style={{ marginBottom: 12 }}>
-            <div className="pt">Batting · all matches<small>Blue = batted in top 4 · * = not out · DNB = did not bat</small></div>
-            <div className="tw">
+            <div className="pt">Batting · all matches<small>Blue = top 4 · * = not out · RH = retired hurt</small></div>
+            <div style={{ display: "flex", gap: 8, margin: "0 0 10px", flexWrap: "wrap" }}>
+              <button className={"btn" + (bview === "order" ? "" : " o")} style={{ padding: "4px 14px", fontSize: 15 }} onClick={() => setBview("order")}>Batting order</button>
+              <button className={"btn" + (bview === "player" ? "" : " o")} style={{ padding: "4px 14px", fontSize: 15 }} onClick={() => setBview("player")}>Player summary</button>
+            </div>
+            {bview === "order" ? (
+              <div className="tw">{orderTable}</div>
+            ) : (
+              <div className="tw">
               <table className="tbl mx">
                 <thead><Head first="Batter" tot={["Inns", "Runs", "SR", "Top 4"]} /></thead>
                 <tbody>
@@ -150,6 +199,7 @@ export default function Scorecards({ matches, players, team }) {
                 </tbody>
               </table>
             </div>
+            )}
             {legend}
           </div>
 

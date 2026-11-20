@@ -78,3 +78,5 @@ details.sc>summary small{display:block;font:500 12.5px Inter,sans-serif;color:va
 .tbl.mx td.na{color:var(--mu)}
 .tbl.mx .tot{border-left:2px solid var(--bd)}
 .tbl.mx{min-width:0}
+.tbl.mx td.hl{background:#e6b84066}
+.tbl.mx tr.tf td{font-weight:700;border-top:2px solid var(--bd)}
