@@ -3,7 +3,7 @@ const TABS = [
   ["pl", "👤", "Players"],
   ["sq", "✅", "Squad 15"],
   ["bo", "🏏", "Batting"],
-  ["mt", "📋", "Matches"],
+  ["mt", "📑", "Scorecards"],
   ["up", "🔒", "Upload"],
 ];
 

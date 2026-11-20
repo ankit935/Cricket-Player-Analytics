@@ -4,7 +4,7 @@ import Header from "./components/Header.jsx";
 import Leaders from "./components/Leaders.jsx";
 import PlayerDash from "./components/PlayerDash.jsx";
 import Squad from "./components/Squad.jsx";
-import Matches from "./components/Matches.jsx";
+import Scorecards from "./components/Scorecards.jsx";
 import BattingOrder from "./components/BattingOrder.jsx";
 import Upload from "./components/Upload.jsx";
 import { computeStats } from "./lib/stats";
@@ -14,7 +14,7 @@ const TITLES = {
   pl: "Player Dashboard",
   sq: "Pick your 15",
   bo: "Batting order",
-  mt: "Matches",
+  mt: "Match scorecards",
   up: "Upload scorecards",
 };
 
@@ -114,7 +114,7 @@ export default function App() {
           {tab === "pl" && <PlayerDash stats={stats} matches={matches} team={sel} cur={cur} onPick={setCur} />}
           {tab === "sq" && <Squad players={stats.players} sel={squad} onToggle={onToggle} />}
           {tab === "bo" && <BattingOrder players={stats.players} squad={squad} />}
-          {tab === "mt" && <Matches matches={matches} />}
+          {tab === "mt" && <Scorecards matches={matches} players={stats.players} />}
           {tab === "up" && <Upload matches={matches} onAdd={onAdd} onDelete={onDelete} toast={toast} />}
         </main>
         <p className="note">
