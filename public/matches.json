@@ -1,1 +1,1067 @@
-[]
+[
+ {
+  "title": "Titans - B vs Hallaa bol",
+  "date": "26 Sep 2026",
+  "venue": "",
+  "result": "",
+  "innings": [
+   {
+    "team": "Titans - B",
+    "score": "151/13 (20.0)",
+    "bat": [
+     [
+      "Ankit Vora",
+      0,
+      1,
+      0,
+      0,
+      1,
+      "c Gautam Patel b HAPPY DOBARIYA"
+     ],
+     [
+      "Devraj Vasani",
+      0,
+      3,
+      0,
+      0,
+      1,
+      "c keyur jivani b Deep Lakkad"
+     ],
+     [
+      "Jha Shashwat",
+      4,
+      2,
+      1,
+      0,
+      1,
+      "c Yash Mevada b HAPPY DOBARIYA"
+     ],
+     [
+      "Shubham Rajput",
+      3,
+      4,
+      0,
+      0,
+      1,
+      "c Yash Mevada b Deep Lakkad"
+     ],
+     [
+      "Vijay Chudasama",
+      52,
+      35,
+      8,
+      0,
+      0,
+      "retired hurt"
+     ],
+     [
+      "Akshay Pandharpatte",
+      1,
+      4,
+      0,
+      0,
+      1,
+      "c Yash Mevada b Meet Antala"
+     ],
+     [
+      "Zeel Vaghasiya",
+      0,
+      4,
+      0,
+      0,
+      1,
+      "c Meet Mori b Meet Antala"
+     ],
+     [
+      "Hardik Bhakhodiya Tcpl",
+      1,
+      2,
+      0,
+      0,
+      1,
+      "run out Deep Lakkad"
+     ],
+     [
+      "Sanket Mandaliya",
+      4,
+      7,
+      1,
+      0,
+      1,
+      "b keyur jivani"
+     ],
+     [
+      "Rajesh Satvara",
+      35,
+      29,
+      3,
+      2,
+      1,
+      "c Yash Mevada b HAPPY DOBARIYA"
+     ],
+     [
+      "Deep",
+      1,
+      4,
+      0,
+      0,
+      1,
+      "c HAPPY DOBARIYA b Yug joshi"
+     ],
+     [
+      "Amit Mehta",
+      11,
+      15,
+      1,
+      0,
+      1,
+      "run out Yash Mevada"
+     ],
+     [
+      "Uttam Bhuva",
+      0,
+      1,
+      0,
+      0,
+      1,
+      "c HAPPY DOBARIYA b Yug joshi"
+     ],
+     [
+      "Parth Patel",
+      1,
+      4,
+      0,
+      0,
+      0,
+      "not out"
+     ],
+     [
+      "Dharmesh Chauhan",
+      5,
+      3,
+      1,
+      0,
+      0,
+      "not out"
+     ]
+    ],
+    "bowl": [
+     [
+      "HAPPY DOBARIYA",
+      "4",
+      27,
+      3,
+      9,
+      1,
+      0
+     ],
+     [
+      "Deep Lakkad",
+      "3",
+      25,
+      2,
+      7,
+      4,
+      0
+     ],
+     [
+      "Meet Antala",
+      "3",
+      19,
+      3,
+      11,
+      8,
+      0
+     ],
+     [
+      "Yug joshi",
+      "4",
+      15,
+      2,
+      13,
+      1,
+      0
+     ],
+     [
+      "keyur jivani",
+      "2",
+      28,
+      1,
+      5,
+      5,
+      2
+     ],
+     [
+      "Yash Mevada",
+      "2",
+      11,
+      0,
+      9,
+      0,
+      0
+     ],
+     [
+      "Gautam Patel",
+      "1",
+      19,
+      0,
+      2,
+      6,
+      0
+     ],
+     [
+      "Meet Mori",
+      "1",
+      7,
+      0,
+      3,
+      1,
+      0
+     ]
+    ]
+   },
+   {
+    "team": "Hallaa bol",
+    "score": "151/10 (20.0)",
+    "bat": [
+     [
+      "Shiv Jadav",
+      7,
+      12,
+      0,
+      0,
+      1,
+      "c Deep b Zeel Vaghasiya"
+     ],
+     [
+      "Gautam Patel",
+      12,
+      17,
+      2,
+      0,
+      1,
+      "c Amit Mehta b Zeel Vaghasiya"
+     ],
+     [
+      "Meet Mori",
+      5,
+      3,
+      1,
+      0,
+      1,
+      "c Deep b Dharmesh Chauhan"
+     ],
+     [
+      "Brijrajsinh Jadeja",
+      0,
+      3,
+      0,
+      0,
+      1,
+      "b Zeel Vaghasiya"
+     ],
+     [
+      "keyur jivani",
+      2,
+      4,
+      0,
+      0,
+      1,
+      "c Vijay Chudasama b Ankit Vora"
+     ],
+     [
+      "Jaymin Ramanuj",
+      10,
+      19,
+      1,
+      0,
+      1,
+      "c Dharmesh Chauhan b Amit Mehta"
+     ],
+     [
+      "parmar lakhman",
+      7,
+      12,
+      0,
+      0,
+      1,
+      "st Ankit Vora b Amit Mehta"
+     ],
+     [
+      "Yug joshi",
+      20,
+      14,
+      1,
+      1,
+      1,
+      "b Vijay Chudasama"
+     ],
+     [
+      "HAPPY DOBARIYA",
+      24,
+      8,
+      3,
+      2,
+      1,
+      "c Ankit Vora b Deep"
+     ],
+     [
+      "Yash Mevada",
+      33,
+      17,
+      2,
+      3,
+      0,
+      "not out"
+     ],
+     [
+      "Meet Antala",
+      14,
+      12,
+      1,
+      1,
+      1,
+      "c Vijay Chudasama b Zeel Vaghasiya"
+     ],
+     [
+      "Deep Lakkad",
+      1,
+      2,
+      0,
+      0,
+      0,
+      "not out"
+     ]
+    ],
+    "bowl": [
+     [
+      "Zeel Vaghasiya",
+      "4",
+      14,
+      4,
+      16,
+      1,
+      0
+     ],
+     [
+      "Deep",
+      "3",
+      31,
+      1,
+      10,
+      3,
+      2
+     ],
+     [
+      "Dharmesh Chauhan",
+      "3",
+      24,
+      1,
+      8,
+      3,
+      1
+     ],
+     [
+      "Ankit Vora",
+      "4",
+      45,
+      1,
+      9,
+      1,
+      0
+     ],
+     [
+      "Vijay Chudasama",
+      "4",
+      23,
+      1,
+      10,
+      3,
+      0
+     ],
+     [
+      "Amit Mehta",
+      "2",
+      14,
+      2,
+      6,
+      2,
+      0
+     ]
+    ]
+   }
+  ],
+  "id": "m3858468989"
+ },
+ {
+  "title": "Thunder striker A vs Titans - B",
+  "date": "24 Oct 2026",
+  "venue": "",
+  "result": "Thunder striker A won by 34 runs",
+  "innings": [
+   {
+    "team": "Thunder striker A",
+    "score": "196/9 (20.0)",
+    "bat": [
+     [
+      "Rahul Chauhan",
+      7,
+      6,
+      1,
+      0,
+      1,
+      "b Deep Dharasandiya"
+     ],
+     [
+      "Yug joshi",
+      10,
+      8,
+      2,
+      0,
+      1,
+      "c (sub) Dharmesh Chauhan b Zeel Vaghasiya"
+     ],
+     [
+      "Harsh",
+      1,
+      2,
+      0,
+      0,
+      1,
+      "b Dushyant Gadhiya"
+     ],
+     [
+      "Jigar Panchal",
+      0,
+      3,
+      0,
+      0,
+      1,
+      "c (sub) Dharmesh Chauhan b Dushyant Gadhiya"
+     ],
+     [
+      "Meet Mori",
+      39,
+      25,
+      4,
+      1,
+      1,
+      "b Deep Dharasandiya"
+     ],
+     [
+      "Shyam Thakor",
+      2,
+      9,
+      0,
+      0,
+      1,
+      "c (sub) Bhoomit Patel b Ruchish Parikh"
+     ],
+     [
+      "Yash Mevada",
+      51,
+      24,
+      8,
+      1,
+      1,
+      "c Dharmesh Chauhan b Neel Patel"
+     ],
+     [
+      "Deep Lakkad",
+      33,
+      25,
+      4,
+      0,
+      0,
+      "not out"
+     ],
+     [
+      "Vishwaraj sinh",
+      13,
+      9,
+      3,
+      0,
+      1,
+      "b Ankit Vora"
+     ],
+     [
+      "Ankit Parmar",
+      12,
+      10,
+      1,
+      1,
+      1,
+      "b Deep Dharasandiya"
+     ],
+     [
+      "Mr X",
+      2,
+      1,
+      0,
+      0,
+      0,
+      "not out"
+     ]
+    ],
+    "bowl": [
+     [
+      "Dushyant Gadhiya",
+      "3",
+      15,
+      2,
+      11,
+      0,
+      0
+     ],
+     [
+      "Zeel Vaghasiya",
+      "2",
+      23,
+      1,
+      4,
+      2,
+      0
+     ],
+     [
+      "Deep Dharasandiya",
+      "4",
+      35,
+      3,
+      9,
+      2,
+      0
+     ],
+     [
+      "Ruchish Parikh",
+      "3",
+      30,
+      1,
+      9,
+      6,
+      0
+     ],
+     [
+      "Dharmesh Chauhan",
+      "2",
+      37,
+      0,
+      1,
+      5,
+      1
+     ],
+     [
+      "Bhoomit Patel",
+      "1",
+      12,
+      0,
+      2,
+      3,
+      0
+     ],
+     [
+      "Ankit Vora",
+      "4",
+      29,
+      1,
+      10,
+      2,
+      0
+     ],
+     [
+      "Neel Patel",
+      "1",
+      13,
+      1,
+      2,
+      1,
+      1
+     ]
+    ]
+   },
+   {
+    "team": "Titans - B",
+    "score": "162/10 (20.0)",
+    "bat": [
+     [
+      "Yash Suthar",
+      24,
+      30,
+      3,
+      0,
+      0,
+      "retired hurt"
+     ],
+     [
+      "Shreyash Zala",
+      13,
+      10,
+      2,
+      0,
+      1,
+      "c Yash Mevada b Yug joshi"
+     ],
+     [
+      "Jha Shashwat",
+      32,
+      25,
+      5,
+      0,
+      1,
+      "c Yug joshi b Haard Dholakiya"
+     ],
+     [
+      "Bhoomit Patel",
+      1,
+      3,
+      0,
+      0,
+      1,
+      "c Yug joshi b Jigar Panchal"
+     ],
+     [
+      "Ankit Vora",
+      54,
+      23,
+      5,
+      3,
+      1,
+      "c Yash Mevada b Yug joshi"
+     ],
+     [
+      "Gunjan Bhavsar",
+      1,
+      2,
+      0,
+      0,
+      1,
+      "c Yash Mevada b Jigar Panchal"
+     ],
+     [
+      "Neel Patel",
+      0,
+      2,
+      0,
+      0,
+      1,
+      "b Jigar Panchal"
+     ],
+     [
+      "Mehul Patel",
+      1,
+      3,
+      0,
+      0,
+      1,
+      "c Yug joshi b Haard Dholakiya"
+     ],
+     [
+      "Ruchish Parikh",
+      5,
+      5,
+      0,
+      0,
+      1,
+      "c Jigar Panchal b Yash Mevada"
+     ],
+     [
+      "Sanket Mandaliya",
+      6,
+      11,
+      0,
+      0,
+      1,
+      "b Rahul Chauhan"
+     ],
+     [
+      "Dushyant Gadhiya",
+      7,
+      7,
+      0,
+      0,
+      1,
+      "run out Rahul Chauhan"
+     ],
+     [
+      "Dharmesh Chauhan",
+      5,
+      3,
+      1,
+      0,
+      0,
+      "not out"
+     ]
+    ],
+    "bowl": [
+     [
+      "Mr X",
+      "3",
+      23,
+      0,
+      8,
+      0,
+      1
+     ],
+     [
+      "Yug joshi",
+      "3",
+      25,
+      2,
+      8,
+      1,
+      1
+     ],
+     [
+      "Deep Lakkad",
+      "1",
+      6,
+      0,
+      4,
+      0,
+      0
+     ],
+     [
+      "Yash Mevada",
+      "2",
+      15,
+      1,
+      4,
+      3,
+      0
+     ],
+     [
+      "Jigar Panchal",
+      "4",
+      31,
+      3,
+      10,
+      0,
+      0
+     ],
+     [
+      "Haard Dholakiya",
+      "4",
+      31,
+      2,
+      7,
+      1,
+      0
+     ],
+     [
+      "Harsh",
+      "1",
+      15,
+      0,
+      1,
+      2,
+      0
+     ],
+     [
+      "Vishwaraj sinh",
+      "1",
+      7,
+      0,
+      0,
+      0,
+      0
+     ],
+     [
+      "Rahul Chauhan",
+      "1",
+      7,
+      1,
+      5,
+      0,
+      2
+     ]
+    ]
+   }
+  ],
+  "id": "m3788946814"
+ },
+ {
+  "title": "Titans - B vs Titans - A",
+  "date": "31 Oct 2026",
+  "venue": "",
+  "result": "Titans - A won by 5 wickets",
+  "innings": [
+   {
+    "team": "Titans - B",
+    "score": "150/8 (20.0)",
+    "bat": [
+     [
+      "Parth Patel",
+      11,
+      6,
+      2,
+      0,
+      1,
+      "c Shreyash Zala b Zeel Vaghasiya"
+     ],
+     [
+      "Uttam Bhuva",
+      9,
+      17,
+      1,
+      0,
+      1,
+      "b Deep Dharasandiya"
+     ],
+     [
+      "Jha Shashwat",
+      42,
+      36,
+      5,
+      0,
+      0,
+      "not out"
+     ],
+     [
+      "Akshay Pandharpatte",
+      2,
+      8,
+      0,
+      0,
+      1,
+      "c Shreyash Zala b Deep Dharasandiya"
+     ],
+     [
+      "Yash Suthar",
+      7,
+      6,
+      1,
+      0,
+      1,
+      "c Dushyant Gadhiya b Dharmesh Chauhan"
+     ],
+     [
+      "Ankit Vora",
+      38,
+      22,
+      5,
+      0,
+      1,
+      "b Deep Dharasandiya"
+     ],
+     [
+      "Gunjan Bhavsar",
+      12,
+      7,
+      2,
+      0,
+      1,
+      "b Dushyant Gadhiya"
+     ],
+     [
+      "Dharmesh Chauhan",
+      3,
+      6,
+      0,
+      0,
+      1,
+      "c Deep Dharasandiya b Bhoomit Patel"
+     ],
+     [
+      "Amit Mehta",
+      4,
+      9,
+      0,
+      0,
+      0,
+      "not out"
+     ],
+     [
+      "Vijay Chudasama",
+      0,
+      5,
+      0,
+      0,
+      1,
+      "st Shreyash Zala b Bhoomit Patel"
+     ]
+    ],
+    "bowl": [
+     [
+      "Bhoomit Patel",
+      "4",
+      35,
+      2,
+      13,
+      8,
+      0
+     ],
+     [
+      "Zeel Vaghasiya",
+      "4",
+      22,
+      1,
+      11,
+      1,
+      0
+     ],
+     [
+      "Dushyant Gadhiya",
+      "5",
+      28,
+      1,
+      14,
+      1,
+      0
+     ],
+     [
+      "Deep Dharasandiya",
+      "4",
+      23,
+      3,
+      10,
+      2,
+      0
+     ],
+     [
+      "Ankit Vora",
+      "1",
+      15,
+      0,
+      0,
+      2,
+      1
+     ],
+     [
+      "Dharmesh Chauhan",
+      "2",
+      23,
+      1,
+      2,
+      3,
+      0
+     ]
+    ]
+   },
+   {
+    "team": "Titans - A",
+    "score": "153/5 (19.5)",
+    "bat": [
+     [
+      "Amit Mehta",
+      1,
+      6,
+      0,
+      0,
+      1,
+      "c Rakesh Vanand b Akshay Pandharpatte"
+     ],
+     [
+      "Shreyash Zala",
+      23,
+      26,
+      2,
+      1,
+      1,
+      "c Ankit Vora b Amit Mehta"
+     ],
+     [
+      "Devraj Vasani",
+      4,
+      8,
+      1,
+      0,
+      1,
+      "b Amit Mehta"
+     ],
+     [
+      "Mehul Patel",
+      56,
+      41,
+      5,
+      3,
+      0,
+      "retired hurt"
+     ],
+     [
+      "Rajesh Satvara",
+      27,
+      23,
+      2,
+      1,
+      1,
+      "c Dharmesh Chauhan b Amit Mehta"
+     ],
+     [
+      "Deep Dharasandiya",
+      9,
+      13,
+      1,
+      0,
+      1,
+      "b Amit Mehta"
+     ],
+     [
+      "Dushyant Gadhiya",
+      6,
+      7,
+      0,
+      0,
+      0,
+      "not out"
+     ],
+     [
+      "Bhoomit Patel",
+      5,
+      2,
+      1,
+      0,
+      0,
+      "not out"
+     ]
+    ],
+    "bowl": [
+     [
+      "Ankit Vora",
+      "5",
+      26,
+      0,
+      12,
+      1,
+      0
+     ],
+     [
+      "Dharmesh Chauhan",
+      "4",
+      34,
+      0,
+      13,
+      2,
+      0
+     ],
+     [
+      "Amit Mehta",
+      "5.5",
+      32,
+      4,
+      18,
+      0,
+      1
+     ],
+     [
+      "Akshay Pandharpatte",
+      "4",
+      38,
+      1,
+      12,
+      1,
+      5
+     ],
+     [
+      "Yash Suthar",
+      "1",
+      18,
+      0,
+      3,
+      7,
+      0
+     ]
+    ]
+   }
+  ],
+  "id": "m2304451520"
+ }
+]
