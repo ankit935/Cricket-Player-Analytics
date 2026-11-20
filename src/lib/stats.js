@@ -7,7 +7,6 @@ export const MY_RE = /^(tatva\s+)?titans(\s*[-–]?\s*[ab])?$/i;
 export const makeInc = (sel) => (t) =>
   sel === "*" || (sel === "" ? MY_RE.test(String(t).trim()) : t === sel);
 
-
 export const balls = (o) => {
   const [a, b = "0"] = String(o).split(".");
   return +a * 6 + +b;
@@ -94,7 +93,7 @@ export function computeStats(matches, sel) {
     P[n] ||
     (P[n] = {
       name: n, r: 0, b: 0, f: 0, s: 0, out: 0, bl: 0, rc: 0, w: 0, dots: 0, ex: 0, hs: 0, m: 0,
-      bat: 0, bow: 0, ct: 0, stp: 0, ro: 0, fin: 0, finN: 0, finR: 0, finI: 0, finB: 0, ms: [],
+      bat: 0, bow: 0, ct: 0, stp: 0, ro: 0, fin: 0, finN: 0, finR: 0, finI: 0, finB: 0, top: 0, mid: 0, low: 0, ms: [],
     });
 
   matches.forEach((m) => {
@@ -125,9 +124,11 @@ export function computeStats(matches, sel) {
     m.innings.forEach((i, k) => {
       if (!inc(i.team)) return;
       const won = (m.result || "").includes(i.team + " won");
-      i.bat.forEach((x) => {
-        if (x[2] < 1) return;
+      i.bat.forEach((x, ix) => {
         const p = G(x[0]);
+        // batting-order slot: top order = positions 1-4, middle = 5-7, lower = 8+
+        if (ix < 4) p.top++; else if (ix < 7) p.mid++; else p.low++;
+        if (x[2] < 1) return;
         const notOut = !x[5] && !/retired/i.test(x[6] || "");
         const chaseWin = notOut && k === 1 && won;
         p.finI++; p.finR += x[1]; p.finB += x[2];
@@ -158,4 +159,26 @@ export function computeStats(matches, sel) {
     p.badges = cats.filter((c) => c.top[0] && c.top[0].name === p.name).map((c) => c.i + " " + c.k);
   });
   return { players, byName: P, cats };
+}
+
+// ---------- Batting-order planner ----------
+// Suggests the next top 4 so every player gets a turn in the top order.
+//  fair = fewest top-4 innings first (pending players go first)
+//  form = best batting form only
+//  mix  = 2 best-form batters + 2 players still waiting for a top-order chance
+export function suggestTop4(pool, mode) {
+  const byForm = [...pool].sort((a, b) => b.fa - a.fa || b.imp - a.imp);
+  const byFair = [...pool].sort((a, b) => a.top - b.top || b.fa - a.fa || b.imp - a.imp);
+  let pick;
+  if (mode === "form") pick = byForm.filter((p) => p.finI > 0).slice(0, 4);
+  else if (mode === "fair") pick = byFair.slice(0, 4);
+  else {
+    const best = byForm.filter((p) => p.finI > 0).slice(0, 2);
+    pick = [...best, ...byFair.filter((p) => !best.includes(p)).slice(0, 4 - best.length)];
+  }
+  for (const p of byForm) {
+    if (pick.length >= 4) break;
+    if (!pick.includes(p)) pick.push(p);
+  }
+  return pick.sort((a, b) => b.fa - a.fa);
 }

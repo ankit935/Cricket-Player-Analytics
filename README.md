@@ -17,7 +17,7 @@ public/matches.json        <- match data shown to everyone (edit/replace this fi
 public/logo.png            <- team logo
 src/lib/stats.js           <- all calculations (impact, consistency, finisher, fielding...)
 src/lib/parser.js          <- reads CricHeroes PDFs in the browser
-src/components/            <- Sidebar, Header, Leaders, PlayerDash, Chart, Squad, Matches, Upload
+src/components/            <- Sidebar, Header, Leaders, PlayerDash, Chart, Squad, BattingOrder, Matches, Upload
 src/App.jsx                <- state + layout
 src/styles.css             <- theme (Rajdhani + Inter, #078bdc)
 .github/workflows/deploy.yml  <- auto-deploy to GitHub Pages
