@@ -70,3 +70,11 @@ details.sc>summary{cursor:pointer;list-style:none;font:600 21px Rajdhani,sans-se
 details.sc>summary::-webkit-details-marker{display:none}
 details.sc>summary:before{content:"▸ "}details.sc[open]>summary:before{content:"▾ "}
 details.sc>summary small{display:block;font:500 12.5px Inter,sans-serif;color:var(--mu);padding-left:18px}
+.tbl.mx th,.tbl.mx td{text-align:center;min-width:92px}
+.tbl.mx th.nm,.tbl.mx td.nm{text-align:left;position:sticky;left:0;background:var(--card);z-index:1;font-weight:600;min-width:140px}
+.tbl.mx td small{display:block;color:var(--mu);font-size:11px}
+.tbl.mx th small{display:block;font:500 10px Inter,sans-serif;text-transform:none;letter-spacing:0}
+.tbl.mx td.t4{background:#078bdc22}
+.tbl.mx td.na{color:var(--mu)}
+.tbl.mx .tot{border-left:2px solid var(--bd)}
+.tbl.mx{min-width:0}

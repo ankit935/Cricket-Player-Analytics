@@ -114,7 +114,7 @@ export default function App() {
           {tab === "pl" && <PlayerDash stats={stats} matches={matches} team={sel} cur={cur} onPick={setCur} />}
           {tab === "sq" && <Squad players={stats.players} sel={squad} onToggle={onToggle} />}
           {tab === "bo" && <BattingOrder players={stats.players} squad={squad} />}
-          {tab === "mt" && <Scorecards matches={matches} players={stats.players} />}
+          {tab === "mt" && <Scorecards matches={matches} players={stats.players} team={sel} />}
           {tab === "up" && <Upload matches={matches} onAdd={onAdd} onDelete={onDelete} toast={toast} />}
         </main>
         <p className="note">
